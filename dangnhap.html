@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <div class="container"> 
+        <script src="pro.js"></script>       
+        <div class="navbar">
+            <img src="icon/logo.png" class="logo">
+            <nav>                                  
+                <ul>
+                    <div class="input-box">
+                        <input type="text" placeholder="Username" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Password" required>
+                    </div>                  
+                        <div class="login-success-message" style="display: none;">
+                            <h1>đăng nhập thành công</h1>
+                            <p> chào mừng bạn đến với web đen</p>
+                        </div>                 
+                </ul>
+            </nav>
+            <div class="button-borders">
+                <button id="login-button" class="primary-button">BUTTON</button>
+                
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script>
+        document.getElementById('login-button').addEventListener('click', function() {
+            document.getElementById('login-success-message').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
